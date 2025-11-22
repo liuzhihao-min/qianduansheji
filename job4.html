@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>原创小说交流会 · Writer's Salon</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background: linear-gradient(135deg, #f6ede3, #fdf7f1);
+            color: #3b3025;
+            text-align: center;
+        }
+        .page {
+            display: inline-block;
+            background-color: #F0E8FF; /* 薄雾紫 */
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+        }
+        .center {
+            text-align: center;
+        }
+
+        .right {
+            text-align: right;
+        }
+        /* 并集选择器 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #cd1048;
+            letter-spacing: 0.5px;
+        }
+        /* 伪元素 */
+        p::first-letter {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ab2164;
+        }
+        div::first-line {
+            color: #db1845;
+            font-weight: bold;
+            text-align: center;
+        }
+        /* ID选择器 */
+        p#intro {
+            font-size: 20px;
+            font-weight: bold;
+            color: #c71515;
+            background-color: #F8F0FF;
+            padding: 12px 15px;
+            border-left: 4px solid #8B2323;
+            margin: 20px 0;
+        }
+        /* 后代选择器 */
+        div table a {
+            color: #4A306D;
+            font-weight: bold;
+            font-size: 110%;
+        }
+        div table a:hover {
+            text-decoration: none;
+            color: #B366FF;
+            border-bottom: 2px solid #B366FF;
+        }
+        /* 链接伪类 */
+        a:link {
+            color: #4A306D;
+            text-decoration: none;
+        }
+        a:visited {
+            color: #6B4E8D;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #B366FF;
+            border-bottom: 1px solid #B366FF;
+        }
+        a:active {
+            color: #8B2323;
+            text-decoration: none;
+        }
+        /* 带类名的链接 */
+        a.red {
+            color: #DC143C;
+        }
+        a.red:hover {
+            background-color: #FFE6F2;
+        }
+        a.blue {
+            color: #1E40AF;
+        }
+        a.blue:hover {
+            background-color: #E6F7FF;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: "Arial", sans-serif;
+        }
+        th, td {
+            border: 2px solid #4A306D;
+            padding: 12px;
+            text-align: center;
+            background-color: #FAF5FF;
+        }
+       
+        td {
+            font-size: 15px;
+        }
+         .notice {
+            font-size: 85%;
+            line-height: 1.8; 
+        }
+        .notice-title{
+            text-align: center;
+            font-size: 85%;
+            line-height: 1.8;
+        }
+       
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+            color: #353030;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ①顶部标题区 -->
+        <div>
+            <h1>原创小说交流会 · Writer’s Salon</h1>
+        </div>
+
+        <!-- ②活动介绍区 -->
+        <div>
+            <h2>活动介绍</h2>
+            <p>这里是原创作者的灵魂聚集地，无论你是深耕多年的创作者，还是刚刚提笔的文学爱好者，都能在交流中找到共鸣。我们相信每一段文字都承载着独特的思想，每一个故事都值得被认真聆听。在这里，你可以分享创作灵感的来源，探讨情节设计的巧思，也可以倾诉写作路上的困惑，收获真诚的建议与鼓励。</p>
+            <p>活动将设置作品片段朗读、创作心得分享、主题写作工坊等环节，让大家在互动中碰撞思想火花，提升创作水平。我们还会邀请资深作者担任嘉宾，解析小说创作的技巧与逻辑，助力每一位创作者突破瓶颈，让故事焕发更强的生命力。</p>
+            <p id="intro">重要提示:参与活动需提前准备500字左右的原创小说片段(电子版或纸质版均可),分享时请围绕作品的创作背景、核心立意展开,让交流更具深度与价值！</p>
+        </div>
+
+        <!-- ③活动报名信息表格区 -->
+        <div>
+            <h3>报名作者信息登记表</h3>
+            <table>
+                <tr>
+                    <th>笔名</th>
+                    <th>作品类型</th>
+                    <th>作品名称</th>
+                    <th>创作时长</th>
+                    <th>联系方式</th>
+                </tr>
+                <tr>
+                    <td><a href="https://example.com/person1">墨言</a></td>
+                    <td>现实</td>
+                    <td>《老街的晨光》</td>
+                    <td>8个月</td>
+                    <td>moyan@example.com</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://example.com/person2">ShadowInk</a></td>
+                    <td>奇幻</td>
+                    <td>《星落荒原》</td>
+                    <td>1年2个月</td>
+                    <td>shadowink@example.com</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://example.com/person3">清欢</a></td>
+                    <td>言情</td>
+                    <td>《晚风知我意》</td>
+                    <td>6个月</td>
+                    <td>qinghuan@example.com</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://example.com/person4">冷轩</a></td>
+                    <td>悬疑</td>
+                    <td>《无声的访客》</td>
+                    <td>10个月</td>
+                    <td>luxuan@example.com</a></td>
+                </tr>
+                <tr>
+                    <td><a href="https://example.com/person5">云舒</a></td>
+                    <td>历史</td>
+                    <td>《长安旧梦》</td>
+                    <td>1年半</td>
+                    <td>yunshu@example.com</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ④页面链接区 -->
+        <div class="center">
+            <p>
+                <a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red">查看往期活动照片</a><br>
+                <a href="job3.html" class="blue">在线咨询活动详情</a>
+            </p>
+        </div>
+
+        <!-- ⑤底部公告区 -->
+        <div class=notice-title>
+            <p>公告</p>
+        </div>
+        <p class="notice">
+            <p>1:本次原创小说交流会将于每月最后一个周六14:00-17:00举办,地点为城市文化中心三楼多功能厅。报名截止时间为活动前3天,名额有限,先到先得,报名成功后将收到确认邮件。</p>
+            <p>2:活动现场将设置作品互评环节,参与者需携带3份纸质版作品片段供现场交流:<br>优秀作品将有机会被推荐至文学期刊或线上创作平台，同时可获得专业编辑的一对一指导机会。</p>
+            <p>3:为保障交流质量，本次活动仅限原创小说创作者参与，禁止非原创作品分享；<br>活动期间请尊重每一位作者的创作成果,未经允许不得私自转载、传播他人作品片段，违者将取消参与资格。</p>
+        </p>
+    </div>
+</body>
+</html>
